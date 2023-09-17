@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SD_KnowledgeCheck2
 {
-    internal class Student
+    public class Student : Person
     {
+        public int StudentID { get; set; }
+
+        public Student(string name, int studentID) : base(name) => StudentID = studentID;
     }
 }
